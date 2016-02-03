@@ -20,7 +20,7 @@ void writeToFile(const cmplx* const v, const string s, const double dx,
 //-----------------------------------
 int main(){
 
-	const double PI=3.14;
+	
 	const int Nx =300 ;
 	
 	const double xmin = -40;
@@ -133,7 +133,7 @@ void writeToFile(const cmplx* const v, const string s, const double dx,
 	ofstream out(s.c_str());
   double x, xi, xil;
   double h1, h2, h3;
-  const double M_PI=3.14;
+ 
   cmplx ana;
 	for(int i=0; i<Nx; i++){
 		x = xmin + i * dx;
@@ -156,7 +156,6 @@ void init( cmplx* const psi0, const double alpha, const double lambda,
            const double dx, const double dt,
            const int Nx, const double xmin)
 {
-	const double M_PI=3.14;
 	const double x0 = dx*Nx * 0.5;
 	for(int i=0;i<Nx; i++){
 		double x = xmin + i*dx ;
